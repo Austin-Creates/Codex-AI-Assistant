@@ -22,7 +22,7 @@ def acceptCommands():
         try:
             print("Recognizing")
             Query = r.recognize_google(audio, language='en-us')
-            print("Austin:", Query)
+            print("User:", Query)
         except Exception as e:
             print(e)
             return "None"
@@ -74,12 +74,9 @@ def Take_query():
             webbrowser.open("www.youtube.com")
             continue
 
-        elif "born" in query:
-            speak("My inventor Austin first run me on April and that's all I can remember since!")
-
         elif "open scratch" in query:
             speak("Opening scratch")
-            webbrowser.open("https://scratch.mit.edu/users/King_Codex")
+            webbrowser.open("https://scratch.mit.edu")
 
         elif "open school web" in query:
             speak("Opening Manage back")
@@ -94,7 +91,7 @@ def Take_query():
             continue
 
         elif "codex" in query:
-            speak("Yes Austin! What can I do for you??")
+            speak("Yes user! What can I do for you??")
             continue
 
         elif "library" in query:
@@ -110,11 +107,11 @@ def Take_query():
             continue
 
         elif "goodbye" in query:
-            speak("Good Bye Austin!")
+            speak("Good Bye User!")
             exit()
 
         elif "thank you" in query:
-            speak("You're welcome Austin, what else can I do for you??")
+            speak("You're welcome User, what else can I do for you??")
 
         elif "from wikipedia" in query:
             speak("Checking the wikipedia ")
@@ -125,7 +122,7 @@ def Take_query():
             speak(result)
 
         elif "your name" in query:
-            speak("I am Codex. An AI Desktop Assistant! Invented by Sir Austin")
+            speak("I am Codex. An AI Desktop Assistant!")
             continue
 
         elif 'search web' in query:
@@ -146,7 +143,7 @@ def Take_query():
             speak("Ask my brother Swift to help you! He is an Email Bot")
 
         else:
-            speak("Sorry Austin! I didn't get that!")
+            speak("Sorry User! I didn't get that!")
 
 
 if __name__ == '__main__':
