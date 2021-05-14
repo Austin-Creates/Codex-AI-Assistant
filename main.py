@@ -6,12 +6,11 @@ import webbrowser
 import pywhatkit
 import wikipedia
 import pyjokes
-import smtplib
-from email.message import EmailMessage
 
 
 
-# method to accept and recognize commands given by Austin
+
+# method to accept and recognize commands given by User
 def acceptCommands():
     # create speech_recognition
     r = sr.Recognizer()
@@ -73,14 +72,6 @@ def Take_query():
             speak("Opening youtube ")
             webbrowser.open("www.youtube.com")
             continue
-
-        elif "open scratch" in query:
-            speak("Opening scratch")
-            webbrowser.open("https://scratch.mit.edu")
-
-        elif "open school web" in query:
-            speak("Opening Manage back")
-            webbrowser.open("https://agakhan.managebac.com/student")
 
         elif "how old are you" in query:
             speak("I never give my age!")
