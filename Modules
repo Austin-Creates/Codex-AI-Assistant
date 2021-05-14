@@ -1,0 +1,8 @@
+#Libraries
+pip install pyttsx3
+pip install speechrecognition
+pip install wikipedia
+pip install webbrowser
+pip install pyAudio or pip install pipwin then pipwin install pyAudio
+pip install pyjokes
+pip install pywhatkit
