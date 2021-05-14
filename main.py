@@ -63,7 +63,7 @@ def tellTime():
 
 
 def welcome():
-    speak('Hello Austin! I am Codex your desktop assistant. How can i help you??')
+    speak('Hello User! I am Codex your desktop assistant. How can i help you??')
 
 def Take_query():
     welcome()
